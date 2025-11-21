@@ -3,74 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black November | Luxury Fashion</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Black November | LUXURE</title>
+  
 </head>
 <body>
 
     <!-- HEADER -->
     <header class="header">
         <div class="logo">LUXURE</div>
-        <nav>
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Accessories</a>
-            <a href="#" class="gold-btn small-btn">Shop Now</a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
+            <a href="#categories">Men</a>
+            <a href="#categories">Women</a>
+            <a href="#products">Deals</a>
+            <a href="#newsletter" class="gold-btn">Shop Now</a>
         </nav>
     </header>
 
     <!-- HERO -->
     <section class="hero">
         <div class="hero-text">
-            <h1>Black November <br> Exclusive Drop</h1>
+            <h1>Black November<br>Exclusive Drop</h1>
             <p class="section-subtitle">
-              High-converting landing pages designed to grow your business.
+                Discover luxury fashion at unprecedented prices. Limited time only – elevate your wardrobe with our curated collection.
             </p>
-            <a class="gold-btn" href="#">Explore Collection</a>
+            <a class="gold-btn" href="#products">Explore Collection</a>
         </div>
 
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=800&q=80" alt="Model">
+            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=800&q=80" alt="Luxury Fashion Model">
+        </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown">
+        <h3>⏰ FLASH SALE ENDS IN</h3>
+        <div class="countdown-timer">
+            <div><span id="days">00</span><span>DAYS</span></div>
+            <div><span id="hours">00</span><span>HOURS</span></div>
+            <div><span id="minutes">00</span><span>MINS</span></div>
+            <div><span id="seconds">00</span><span>SECS</span></div>
         </div>
     </section>
 
     <!-- CATEGORIES -->
-    <section class="categories">
-        <h2>Shop Categories</h2>
+    <section class="categories" id="categories">
+        <h2>Shop by Category</h2>
         <div class="cat-grid">
             <div class="cat-card">
-                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80">
-                <div class="cat-info">Men’s Luxury</div>
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Men's Fashion">
+                <div class="cat-info">Men's Luxury</div>
             </div>
             <div class="cat-card">
-                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80">
-                <div class="cat-info">Women’s Couture</div>
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80" alt="Women's Fashion">
+                <div class="cat-info">Women's Couture</div>
             </div>
             <div class="cat-card">
-                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80">
-                <div class="cat-info">Accessories</div>
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Accessories">
+                <div class="cat-info">Premium Accessories</div>
             </div>
         </div>
     </section>
 
     <!-- PRODUCTS -->
-    <section class="products">
-        <h2>Black November Picks</h2>
+    <section class="products" id="products">
+        <h2>🔥 Black November Exclusives</h2>
         <div class="product-grid">
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=600&q=80">
+                <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=600&q=80" alt="Leather Jacket">
                 <h3>Royal Leather Jacket</h3>
                 <p class="price">Ksh 12,999</p>
                 <button class="add-btn">Add to Bag</button>
             </div>
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=600&q=80">
+                <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=600&q=80" alt="Designer Dress">
                 <h3>Premium Designer Dress</h3>
                 <p class="price">Ksh 9,499</p>
                 <button class="add-btn">Add to Bag</button>
             </div>
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Gold Chain">
                 <h3>Gold Chain Set</h3>
                 <p class="price">Ksh 5,899</p>
                 <button class="add-btn">Add to Bag</button>
@@ -78,89 +94,76 @@
         </div>
     </section>
 
-    <!-- LIMITED EDITION BANNER -->
+    <!-- BANNER -->
     <section class="banner">
-        <h2>Limited Edition • Only This November</h2>
-        <a href="#" class="gold-btn">Shop Exclusive</a>
-    </section>
-
-    <!-- PRICING SECTION -->
-    <section class="pricing">
-        <h2>Landing Page Packages</h2>
-        <div class="pricing-grid">
-
-            <!-- Starter -->
-            <div class="pricing-card">
-                <h3>Starter</h3>
-                <p class="price">Ksh 5,000</p>
-                <ul>
-                    <li>1 High-Converting Landing Page</li>
-                    <li>Premium Mobile-First Design</li>
-                    <li>Fast Loading & Optimized Structure</li>
-                    <li>WhatsApp / Call-to-Action Setup</li>
-                    <li>Basic SEO (Meta Tags + Keywords)</li>
-                    <li>1 Month Support & Updates</li>
-                    <li>Source Code + Full Ownership</li>
-                </ul>
-                <a class="gold-btn" href="#">Get Started</a>
-            </div>
-
-            <!-- Professional -->
-            <div class="pricing-card popular">
-                <h3>Professional</h3>
-                <p class="price">Ksh 12,000</p>
-                <ul>
-                    <li>Up to 3 Pages (Landing + About + Services)</li>
-                    <li>Smooth Scroll & Custom Animations</li>
-                    <li>Advanced SEO + Google Analytics Setup</li>
-                    <li>Email/CRM/Newsletter Integration</li>
-                    <li>3 Months Support & Optimization</li>
-                    <li>Unlimited Minor Revisions</li>
-                    <li>Blog or Updates Section Included</li>
-                </ul>
-                <a class="gold-btn" href="#">Most Popular</a>
-            </div>
-
-            <!-- Enterprise -->
-            <div class="pricing-card">
-                <h3>Enterprise</h3>
-                <p class="price">Ksh 25,000</p>
-                <ul>
-                    <li>High-Converting Landing Page</li>
-                    <li>Custom UX & Brand Strategy</li>
-                    <li>A/B Split Testing (2 Variations)</li>
-                    <li>CRM & Marketing System Integration</li>
-                    <li>Sales Funnel Setup (Lead → Email → Conversion)</li>
-                    <li>Copywriting Optimization</li>
-                    <li>6 Months Priority Support</li>
-                    <li>Performance Reporting & Heatmaps</li>
-                </ul>
-                <a class="gold-btn" href="#">Let's Talk</a>
-            </div>
-
-        </div>
+        <h2>✨ Limited Edition • Only This November</h2>
+        <a href="#newsletter" class="gold-btn">Shop Exclusive Deals</a>
     </section>
 
     <!-- NEWSLETTER -->
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
         <h2>Join Our VIP List</h2>
-        <p>Be the first to access private drops & luxury discounts.</p>
-        <form>
-            <input type="email" placeholder="Enter your email">
-            <button class="gold-btn">Subscribe</button>
+        <p>Be the first to access private drops, exclusive discounts & luxury collections.</p>
+        <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button class="gold-btn" type="submit">Subscribe</button>
         </form>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>© 2025 LUXURE — Premium Fashion</p>
+        <p>© 2025 LUXURE — Premium Fashion Excellence</p>
         <div class="footer-links">
-            <a href="#">About</a>
+            <a href="#">About Us</a>
             <a href="#">Contact</a>
-            <a href="#">Support</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
             <a href="#">Privacy Policy</a>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            document.getElementById('nav').classList.toggle('active');
+        }
+
+        // Countdown timer
+        function updateCountdown() {
+            const endDate = new Date('2025-11-30T23:59:59').getTime();
+            const now = new Date().getTime();
+            const distance = endDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+
+            if (distance < 0) {
+                document.querySelector('.countdown').innerHTML = '<h3>Sale Has Ended!</h3>';
+            }
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById('nav').classList.remove('active');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
