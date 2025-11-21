@@ -404,6 +404,15 @@
             transition: all 0.3s;
         }
 
+        .footer-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-text strong {
+  color: #333;
+}
+
         /* RESPONSIVE */
         @media (max-width: 968px) {
             .hero {
